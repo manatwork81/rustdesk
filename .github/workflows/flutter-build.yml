@@ -37,7 +37,8 @@ env:
 jobs:
   build-for-windows-flutter:
     name: ${{ matrix.job.target }} (${{ matrix.job.os }})
-    runs-on: ${{ matrix.job.os }}
+  #  runs-on: ${{ matrix.job.os }}
+     runs-on: self-hosted
     strategy:
       fail-fast: false
       matrix:
