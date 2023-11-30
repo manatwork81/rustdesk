@@ -38,7 +38,7 @@ jobs:
   build-for-windows-flutter:
     name: ${{ matrix.job.target }} (${{ matrix.job.os }})
   #  runs-on: ${{ matrix.job.os }}
-     runs-on: [DESKTOP-723RE5J, windows, x64]
+     runs-on: [DESKTOP-723RE5J]
     strategy:
       fail-fast: false
       matrix:
