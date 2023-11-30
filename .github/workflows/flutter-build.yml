@@ -38,7 +38,7 @@ jobs:
   build-for-windows-flutter:
     name: ${{ matrix.job.target }} (${{ matrix.job.os }})
   #  runs-on: ${{ matrix.job.os }}
-     runs-on: self-hosted
+     runs-on: [self-hosted, Linux, ARM64]
     strategy:
       fail-fast: false
       matrix:
